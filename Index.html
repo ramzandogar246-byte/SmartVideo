@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Video</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#000;color:#fff;font-family:sans-serif;overflow:hidden}
+.header{position:fixed;top:0;width:100%;height:60px;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.6);z-index:100;border-bottom:1px solid #222}
+.logo{font-size:24px;font-weight:bold;letter-spacing:1px;background:linear-gradient(90deg,#00f5ff,#ff00ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.feed{height:100vh;overflow-y:scroll;scroll-snap-type:y mandatory}
+.video-card{height:100vh;width:100%;position:relative;scroll-snap-align:start}
+.video-card video{height:100%;width:100%;object-fit:cover}
+.overlay{position:absolute;bottom:0;width:100%;padding:20px 70px 30px 15px;background:linear-gradient(transparent, rgba(0,0,0,0.8))}
+.name{font-weight:bold;font-size:17px}
+.caption{margin-top:6px;font-size:14px;opacity:0.9}
+.actions{position:absolute;right:12px;bottom:100px;display:flex;flex-direction:column;gap:22px}
+.btn{font-size:28px;text-align:center;background:rgba(255,255,255,0.15);width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center}
+</style>
+</head>
+<body>
+<div class="header"><div class="logo">Smart Video</div></div>
+<div class="feed">
+  <div class="video-card">
+    <video src="https://www.w3schools.com/html/mov_bbb.mp4" loop autoplay muted playsinline></video>
+    <div class="overlay"><div class="name">Smart Video Official</div><div class="caption">Meri pehli Smart Video ❤️ Ek hi screen me sab kuch!</div></div>
+    <div class="actions"><div class="btn">❤️</div><div class="btn">💬</div><div class="btn">↗️</div></div>
+  </div>
+  <div class="video-card">
+    <video src="https://www.w3schools.com/html/movie.mp4" loop autoplay muted playsinline></video>
+    <div class="overlay"><div class="name">Smart Video</div><div class="caption">Swipe karen, dusri video dekhen. Facebook + TikTok design</div></div>
+    <div class="actions"><div class="btn">❤️</div><div class="btn">💬</div><div class="btn">↗️</div></div>
+  </div>
+</div>
+</body>
+</html>
